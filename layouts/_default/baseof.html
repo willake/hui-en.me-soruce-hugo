@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Willake Lin | Game Programmer Portfolio</title>
+    {{ $cssOpts := (dict "targetPath" "css/home.css" "enableSourceMap" true ) }}
+    {{ $style := resources.Get "scss/home/home.scss" | toCSS $cssOpts }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body> 
+{{ partial "nav" . }}
+{{ block "main" . }}
+{{ end }}
+{{ partial "contact" .}}
+{{ partial "footer" .}}
+</body>
+</html>

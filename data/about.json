@@ -1,0 +1,63 @@
+{
+    "description": [
+        "Having 4 years experience familiar with game engines like Unity and Unreal Engine as a gameplay programmer.",
+        "Collaboration plays an important role in game development. I'm a communicable programmer who also have experience as a game designer and an artist. Various experiences makes me easy to collaborate with people in different roles since I could communicate an comprehensible explansion for them.",
+        "Now I am learning making computer games from scratch with C++. Console games would be my next goal to learn."
+    ],
+    "programming": ["C++", "C#", "UE4 Blueprint", "GLSL", "Git", "SQL", "Shell Script"],
+    "software": ["Unity", "Unreal Engine 4", "OpenGL"],
+    "collaboration": ["Scrum", "Git Flow", "Design Pattern", "Object Oriented Programming", "Data Oriented Programming", "Desktop", "Android/iOS"],
+    "workExperience": [
+        {
+            "role": "Software Engineer",
+            "period": "SeekrTech, Taichung, Taiwan, September 2018 - June 2021",
+            "highlights": [
+                "Working on unannounced mobile app project using Unity",
+                "Developed internal system for Forest with Vue.js and Ruby on rails",
+                "Collaborated with UI/UX designer to define application features",
+                "Collaborated with design team to identify users need, and produced the company offical website with HTML, CSS and Javascript"
+            ]
+        },
+        {
+            "role": "Front-End Developer",
+            "period": "SeekrTech, Taichung, Taiwan, July 2017 - September 2017",
+            "highlights": [
+                "Developed browser extension with HTML, CSS, Javascript",
+                "Collaborated with UI/UX designer to define application features",
+                "Collaborated with design team to identify users need, and produced the company offical website with HTML, CSS and Javascript",
+                "Work with seinor programmer to make browser extension comunicate with server"
+            ]
+        },
+        {
+            "role": "Game Developer",
+            "period": "National Taiwan Normal University, Taipei, Taiwan, July 2016 - July 2017",
+            "highlights": [
+                "Collaborated with colleague to discuss and design whole game",
+                "Draw up design system detail, divided work efficiency",
+                "Developed the whole game system to make it playable",
+                "Implemented several significant gameplay feature with Unity3D"
+            ]
+        }
+    ],
+    "projectExperience": [
+        {
+            "role": "Gameplay Programmer",
+            "period": "Hourglass : Project Norn, Student Project, July 2017 - July 2018",
+            "highlights": [
+                "Discussed with game designer to solve problem between designing and programming, improved level design and remove bugs",
+                "Collaborated with game artist to promote efficiency and make graphic more lively",
+                "Implemented several significant gameplay features with Unity3D"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "degree": "B.A. in Information Comunication",
+            "period": "Yuan Ze University, Taiwan, September 2015 - July 2018"
+        },
+        {
+            "degree": "B.A in Information Management",
+            "period": "Yuan Ze University, Taiwan, September 2013 - July 2015"
+        }
+    ]
+}

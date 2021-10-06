@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Willake Lin | Game Programmer Portfolio</title>
+    {{ $cssOpts := (dict "targetPath" "css/about.css" "enableSourceMap" true ) }}
+    {{ $style := resources.Get "scss/about/about.scss" | toCSS $cssOpts }}
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body> 
+{{ partial "nav" . }}
+<section id="about__me" class="about__me">
+<div class="about__me__avatar">
+    <div class="about__me__avatar__item"></div>
+</div>
+<div class="about__me__content">
+    {{ range .Site.Data.about.description }}
+    <div class="about__me__content__item content color__grey">{{.}}</div>
+    {{ end }}
+</div>
+</section>
+<section class="skill">
+<div class="skill__category">
+    <h2 class="skill__category__title">Programming Skills</h2>
+    <div class="skill__category__content">
+        {{ range .Site.Data.about.programming }}
+        <div class="skill__category__item">
+            <div class="skill__category__item__title color__white">{{.}}</div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+<div class="skill__category">
+    <h2 class="skill__category__title">Software / Framework</h2>
+    <div class="skill__category__content">
+        {{ range .Site.Data.about.software }}
+        <div class="skill__category__item">
+            <div class="skill__category__item__title color__white">{{.}}</div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+<div class="skill__category">
+    <h2 class="skill__category__title">Collaboration / Knowledge</h2>
+    <div class="skill__category__content">
+        {{ range .Site.Data.about.collaboration }}
+        <div class="skill__category__item">
+            <div class="skill__category__item__title color__white">{{.}}</div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+</section>
+<section id="experience" class="experience">
+<div class="experience__category work__experience">
+    <h2 class="experience__category__title h1">Work Experience</h2>
+    <div class="experience__category__content">
+        {{ range .Site.Data.about.workExperience }}
+        <div class="experience__category__item">
+            <div class="experience__category__item__title">{{.role}}</div>
+            <div class="experience__category__item__subtitle color__green">{{.period}}</div>
+            <div class="experience__category__item__detail">
+                {{ range .highlights }}
+                - {{.}}<br>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+<div class="experience__category project__experience">
+    <h2 class="experience__category__title h1">Project Experience</h2>
+    <div class="experience__category__content">
+        {{ range .Site.Data.about.projectExperience }}
+        <div class="experience__category__item">
+            <div class="experience__category__item__title">{{.role}}</div>
+            <div class="experience__category__item__subtitle color__green">{{.period}}</div>
+            <div class="experience__category__item__detail">
+                {{ range .highlights }}
+                - {{.}}<br>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+<div class="experience__category education">
+    <h2 class="experience__category__title h1">Education</h2>
+    <div class="experience__category__content">
+        {{ range .Site.Data.about.education }}
+        <div class="experience__category__item">
+            <div class="experience__category__item__title">{{ .degree }}</div>
+            <div class="experience__category__item__detail">{{ .period }}</div>
+        </div>
+        {{ end }}
+    </div>
+</div>
+<!-- <h2 class="experience__category__title h1">Project Experience</h2>
+<div class="experience__category__item">
+    <div class="experience__category__item__title">Hourglass : Project Norn</div>
+    <div class="experience__category__item__subtitle color__green">Gameplay Programmer, Student Project, July 2017 - July 2018</div>
+    <div class="experience__category__item__detail">- Discussed with game designer to solve problem between designing and programming, improved level design and remove bugs. <br> - Collaborated with game artist to promote efficiency and make graphic more lively <br> - Implemented several significant gameplay features with Unity3D</div>
+</div>
+<h2 class="experience__category__title h1">Education</h2>
+<div class="experience__category__item">
+    <div class="experience__category__item__title">B.A. in Information Comunication</div>
+    <div class="experience__category__item__detail">Yuan Ze University, Taiwan, September 2015 - July 2018</div>
+</div>
+<div class="experience__category__item">
+        <div class="experience__category__item__title">B.A in Information Management</div>
+        <div class="experience__category__item__detail">Yuan Ze University, Taiwan, September 2013 - July 2015</div>
+    </div> -->
+</section>
+{{ partial "contact" .}}
+{{ partial "footer" .}}
+</body>
+</html>
