@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hui En "Willake" Lin | Game Programmer Portfolio</title>
+    {{ partial "meta" . }}
+    {{ $hamburger := resources.Get "libraries/hamburgers/hamburgers.min.css" }}
+    {{ $cssOpts := (dict "targetPath" "css/projects.css" "enableSourceMap" true ) }}
+    {{ $style := resources.Get "scss/projects/projects.scss" | toCSS $cssOpts }}
+    <link rel="stylesheet" href="{{ $hamburger.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body> 
+{{ partial "nav" . }}
+<section class="banner">
+    <div class="banner__title">{{ .Title }}</div>
+</section>
+{{ partial "projects/about" . }}
+<section class="content detail__container">
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Introduction</div>
+        <div class="detail__item__content">
+            Snowball Rage was a game jam project. 
+            A artist friend and me participated in 2018 Unreal Game Jam, which participants need to make a game in one week. 
+            My main duty is implementing significant gameplay mechanic with blueprints. 
+            The objective of the game was willing players to have a extreme fun experience. 
+            Rolling down a snow ball from the top of a mountain, destroying a village and killing enemies to get high score.
+        </div>
+    </div>
+</section>
+<section class="links">
+    <a title="Snowball Rage download link" class="links__download h4 color__white" href="https://drive.google.com/open?id=1-VOrWJ56eX9k6_mlKD9lLL9XTJJG4M8R">Download</a>
+</section>
+{{ partial "footer" .}}
+</body>
+</html>

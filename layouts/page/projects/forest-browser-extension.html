@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hui En "Willake" Lin | Game Programmer Portfolio</title>
+    {{ partial "meta" . }}
+    {{ $hamburger := resources.Get "libraries/hamburgers/hamburgers.min.css" }}
+    {{ $cssOpts := (dict "targetPath" "css/projects.css" "enableSourceMap" true ) }}
+    {{ $style := resources.Get "scss/projects/projects.scss" | toCSS $cssOpts }}
+    <link rel="stylesheet" href="{{ $hamburger.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body> 
+{{ partial "nav" . }}
+<section class="banner">
+    <div class="banner__title">Forest Browser Extension</div>
+</section>
+{{ partial "projects/about" . }}
+<section class="content detail__container">
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Refacotring Settings Page</div>
+        <img class="detail__item__image_sm" src="/images/projects/forest-browser/refactoring_settings.jpg" alt="refactoring_settings">
+    </div>
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Sync with Forest</div>
+        <img class="detail__item__image" src="../../../assets/images/portfolio/forest-browser/forest_browser_sync_with_forest_1.jpg" alt="sync_with_forest_1">
+        <img class="detail__item__image" src="../../../assets/images/portfolio/forest-browser/forest_browser_sync_with_forest_2.jpg" alt="sync_with_forest_2">
+    </div>
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Release New Version</div>
+        <img class="detail__item__image" src="../../../assets/images/portfolio/forest-browser/forest_browser_sync_with_forest_1.jpg" alt="sync_with_forest_1">
+        <img class="detail__item__image" src="../../../assets/images/portfolio/forest-browser/forest_browser_sync_with_forest_2.jpg" alt="sync_with_forest_2">
+    </div>
+</section>
+<section class="links">
+    <a title="Forest Firefox Addon" class="links__download h4 color__white" href="https://addons.mozilla.org/en-US/firefox/addon/forest-stay-focused-be-present/">Firefox Addon</a>
+    <a title="Forest Chrome Extension" class="links__download h4 color__white" href="https://chrome.google.com/webstore/detail/forest-stay-focused-be-pr/kjacjjdnoddnpbbcjilcajfhhbdhkpgk?hl=en">Chrome Extension</a>
+</section>
+{{ partial "footer" .}}
+</body>
+</html>

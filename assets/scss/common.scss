@@ -67,6 +67,7 @@ a {
 }
 
 .content {
+    min-height: 100%;
     font-size: 1.4rem;
 
     @media screen and (min-width: $lg){

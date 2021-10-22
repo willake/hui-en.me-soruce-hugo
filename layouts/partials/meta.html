@@ -1,0 +1,63 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{ $cover := resources.Get "images/cover.jpg" }}
+{{ $favicon := resources.Get "images/favicon.ico" }}
+
+<!--Description-->
+
+<meta name="description" content="Willake Lin, a motivated game programmer from Taiwan. Having 4 years experience using game engines like Unity and Unreal Engine.
+I also have experience in game design, art and project management. I enjoy working with team members. Collaboration is important for me, various experiences makes me easy to communicate with people in different roles. Now I'm looking for a abroad gameplay programmer job.">
+
+
+<!--Author-->
+
+<meta name="author" content="Hui En Lin">
+
+
+<!--Open Graph Title-->
+
+<meta property="og:title" content='Hui En &quot;Willake&quot; Lin | Game Programmer Portfolio' />
+
+<!--Open Graph Image-->
+<meta property="og:image" content="{{$cover.Permalink}}">
+
+
+<!--Open Graph Description-->
+
+<meta property="og:description" content="Willake Lin, a motivated game programmer from Taiwan. Having 4 years experience using game engines like Unity and Unreal Engine.
+I also have experience in game design, art and project management. I enjoy working with team members. Collaboration is important for me, various experiences makes me easy to communicate with people in different roles. Now I'm looking for a abroad gameplay programmer job." />
+
+
+<!--Open Graph Site Name-->
+<meta property="og:site_name" content="Hui En &quot;Willake&quot; Lin | Game Programmer Portfolio" />
+
+<!--Type page-->
+
+<meta property="og:type" content="website" />
+
+<meta property="og:url" content="https://www.willake.me" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card"
+        content="summary_large_image">
+<meta name="twitter:creator"
+        content="@WillakeLin">
+<meta name="twitter:image"
+        content="{{$cover.Permalink}}">
+<meta name="twitter:title"
+        content="Hui En &quot;Willake&quot; Lin | Game Programmer Portfolio">
+<meta name="twitter:description"
+        content="Hui En Lin, a motivated game programmer from Taiwan. Having 4 years experience using game engines like Unity and Unreal Engine.
+        I also have experience in game design, art and project management. I enjoy working with team members. Collaboration is important for me, various experiences makes me easy to communicate with people in different roles. Now I'm looking for a abroad gameplay programmer job.">
+<meta name="twitter:site"
+        content="https://www.hui-en.me/">
+
+<!-- Favicon -->
+
+<link rel="shortcut icon" href="{{$favicon.Permalink}}" type="image/x-icon">
+<link rel="icon" href="{{$favicon.Permalink}}" type="image/x-icon">
+
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">

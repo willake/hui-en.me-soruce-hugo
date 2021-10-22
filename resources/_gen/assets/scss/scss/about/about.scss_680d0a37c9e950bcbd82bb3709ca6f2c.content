@@ -45,6 +45,7 @@ a {
   font-size: 1.2rem; }
 
 .content {
+  min-height: 100%;
   font-size: 1.4rem; }
   @media screen and (min-width: 992px) {
     .content {
@@ -306,7 +307,7 @@ a {
     height: 100px;
     top: calc(50% - 40px);
     left: calc(50% - 50px);
-    background-image: url(../assets/images/common_logo.png);
+    background-image: url(/images/common_logo.png);
     background-size: contain;
     transition: 0.2s ease; } }
 

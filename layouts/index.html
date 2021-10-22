@@ -18,107 +18,39 @@
 <section id="portfolio" class="portfolio">
     <h2 class="portfolio__title h1">Professional Projects</h2>
     <div class="portfolio__row">
-        <a title="Forest Browser Extension" class="portfolio__item" href="/projects/forest-browser-extension">
-            <div class="portfolio__item__body forest__browser">
-                <div class="portfolio__item__overlay"></div>
-                <div class="portfolio__item__text">
-                    <h2 class="portfolio__item__title">Forest Browser Extension</h1>
+        {{ range where (where .Site.Pages "Section" "projects") "Params.projecttype" "Professional" }}
+            <a title="{{ .Title }}" class="portfolio__item" href="{{ .Permalink }}">
+                <div class="portfolio__item__body" style="background-image: url({{ .Params.preview }});">
+                    <div class="portfolio__item__overlay"></div>
+                    <div class="portfolio__item__text">
+                        <h2 class="portfolio__item__title">{{ .Title }}</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolio__item__tags">
-                <div class="portfolio__item__tag color__white">Javascript</div>
-            </div>
-        </a>
-        <a title="Pinka" class="portfolio__item" href="/projects/pinka">
-            <div class="portfolio__item__body pinka">
-                <div class="portfolio__item__overlay"></div>
-                <div class="portfolio__item__text">
-                    <h2 class="portfolio__item__title">Pinka</h1>
+                <div class="portfolio__item__tags">
+                    {{ range .Params.toolsused }}
+                    <div class="portfolio__item__tag color__white">{{ . }}</div>
+                    {{ end }}
                 </div>
-            </div>
-            <div class="portfolio__item__tags">
-                <div class="portfolio__item__tag color__white">Unity</div>
-                <div class="portfolio__item__tag color__white">C#</div>
-            </div>
-        </a>
+            </a>
+        {{ end }}
     </div>
     <h2 class="portfolio__title h1">Side Projects</h2>
     <div class="portfolio__row">
-        <a title="Escape the Room : Remake" class="portfolio__item" href="/projects/escape-the-room-remake">
-        <div class="portfolio__item__body escape__the__room__remake">
-            <div class="portfolio__item__overlay"></div>
-            <div class="portfolio__item__text">
-                <h2 class="portfolio__item__title">Escape the Room : Remake</h1>
-            </div>
-        </div>
-        <div class="portfolio__item__tags">
-            <div class="portfolio__item__tag color__white">Unreal</div>
-            <div class="portfolio__item__tag color__white">Blueprint</div>
-            <div class="portfolio__item__tag color__white">C++</div>
-        </div>
-        </a>
-        <a title="Snowball Rage" class="portfolio__item" href="/projects/snowball-rage">
-            <div class="portfolio__item__body snowball__rage">
-                <div class="portfolio__item__overlay"></div>
-                <div class="portfolio__item__text">
-                    <h2 class="portfolio__item__title">Snowball Rage</h1>
+        {{ range where (where .Site.Pages "Section" "projects") "Params.projecttype" "Side" }}
+            <a title="{{ .Title }}" class="portfolio__item" href="{{ .Permalink }}">
+                <div class="portfolio__item__body" style="background-image: url({{ .Params.preview }});">
+                    <div class="portfolio__item__overlay"></div>
+                    <div class="portfolio__item__text">
+                        <h2 class="portfolio__item__title">{{ .Title }}</h1>
+                    </div>
                 </div>
-            </div>
-            <div class="portfolio__item__tags">
-                <div class="portfolio__item__tag color__white">Unreal</div>
-                <div class="portfolio__item__tag color__white">Blueprint</div>
-            </div>
-        </a>
-        <a title="Escape the Room" class="portfolio__item" href="/projects/escape-the-room">
-            <div class="portfolio__item__body escape__the__room">
-                <div class="portfolio__item__overlay"></div>
-                <div class="portfolio__item__text">
-                    <h2 class="portfolio__item__title">Escape the Room</h1>
+                <div class="portfolio__item__tags">
+                    {{ range .Params.toolsused }}
+                    <div class="portfolio__item__tag color__white">{{ . }}</div>
+                    {{ end }}
                 </div>
-            </div>
-            <div class="portfolio__item__tags">
-                <div class="portfolio__item__tag color__white">Actionscript 3.0</div>
-            </div>
-        </a>
-    </div>
-    <h2 class="portfolio__title h1">Student Projects</h2>
-    <div class="portfolio__row">
-        <a title="Hourglass" class="portfolio__item" href="/projects/hourglass">
-            <div class="portfolio__item__body hourglass">
-                <div class="portfolio__item__overlay"></div>
-                <div class="portfolio__item__text">
-                    <h2 class="portfolio__item__title">Hourglass : Project Norn</h1>
-                </div>
-            </div>
-            <div class="portfolio__item__tags">
-                <div class="portfolio__item__tag color__white">Unity</div>
-                <div class="portfolio__item__tag color__white">C#</div>
-            </div>
-        </a>
-        <a title="I Just Want to Cook" class="portfolio__item" href="/projects/i-just-want-to-cook">
-            <div class="portfolio__item__body i__just__want__to__cook">
-                <div class="portfolio__item__overlay"></div>
-                <div class="portfolio__item__text">
-                    <h2 class="portfolio__item__title">I Just Want to Cook</h1>
-                </div>
-            </div>
-            <div class="portfolio__item__tags">
-                <div class="portfolio__item__tag color__white">Unity</div>
-                <div class="portfolio__item__tag color__white">C#</div>
-            </div>
-        </a>
-        <a title="Secret Triangle" class="portfolio__item" href="/projects/secret-triangle">
-            <div class="portfolio__item__body secret__triangle">
-                <div class="portfolio__item__overlay"></div>
-                <div class="portfolio__item__text">
-                    <h2 class="portfolio__item__title">Secret Triangle</h1>
-                </div>
-            </div>
-            <div class="portfolio__item__tags">
-                <div class="portfolio__item__tag color__white">Unity</div>
-                <div class="portfolio__item__tag color__white">C#</div>
-            </div>
-        </a>
+            </a>
+        {{ end }}
     </div>
 </section>
 {{ end }}

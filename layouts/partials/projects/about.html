@@ -1,0 +1,24 @@
+<section class="about">
+    <table class="about__table">
+        <tr>
+            <td class="about__item__title h4 color__grey">Project Type</td>
+            <td class="about__item__content h4">{{ .Params.projecttype }} Project</td>
+        </tr>
+        <tr>
+            <td class="about__item__title h4 color__grey">Team Size</td>
+            <td class="about__item__content h4">{{ .Params.teamsize }}</td>
+        </tr>
+        <tr>
+            <td class="about__item__title h4 color__grey">Languages Used</td>
+            <td class="about__item__content h4">
+                {{ range .Params.toolsused }}
+                    {{ . }}
+                {{ end }}
+            </td>
+        </tr>
+        <tr>
+            <td class="about__item__title h4 color__grey">Primary Role</td>
+            <td class="about__item__content h4">{{ .Params.role }}</td>
+        </tr>
+    </table>
+</section>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hui En "Willake" Lin | Game Programmer Portfolio</title>
+    {{ partial "meta" . }}
+    {{ $hamburger := resources.Get "libraries/hamburgers/hamburgers.min.css" }}
+    {{ $cssOpts := (dict "targetPath" "css/projects.css" "enableSourceMap" true ) }}
+    {{ $style := resources.Get "scss/projects/projects.scss" | toCSS $cssOpts }}
+    <link rel="stylesheet" href="{{ $hamburger.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body> 
+{{ partial "nav" . }}
+<section class="banner">
+    <div class="banner__title">{{ .Title }}</div>
+</section>
+{{ partial "projects/about" . }}
+<section class="content detail__container">
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Introduction</div>
+        <div class="detail__item__content">
+            Hourglass was a graduate project in my final year of university. 
+            My main duty was implementing gameplay mechanics, including character movement, object interaction and boss fighting. 
+            In addition, I imported shaders bought from Unity Assets Store to improv animations, making them more vigorous. 
+            In this experience, collaborating within the team was the most valuable skills that I acquired. 
+        </div>
+        <div class="detail__item__content">
+            It is a 2D-scrolling puzzle game, about a scientist willing to restore the mistakes he did before. 
+            Players could travel between three different time period (past, now, future) anytime to solve puzzle, experiencing the story, seeing a village from flouring to destroyed.
+        </div>
+    </div>
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Collaboration Skill</div>
+        <div class="detail__item__content">
+            Initially, most of members in the team had no much cooperating experience in game development, especially working with over 7 people. 
+            We worked on our positions separately without much communication, which led the whole game development process slow. Fortunately, all of us were dedicated solution seekers. 
+            We found this problem and had many meetings, discussing about how to improving productivity. 
+            After then, several tools were adopted to overcome this issue. 
+            For example, we started using Trello to manage schedule and track works. 
+            It clearly allowed us working more closely and knowing works of each other. 
+            In terms of programming team, we adopted the new version control feature of Unity, which is based on git but server was provided by Unity official. 
+            It significantly reduce the amount of merging issues. 
+        </div>
+    </div>
+</section>
+<section class="links">
+</section>
+{{ partial "footer" .}}
+</body>
+</html>

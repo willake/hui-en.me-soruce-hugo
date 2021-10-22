@@ -2,8 +2,11 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: true
-project-type: "Professional Project"
-team-size: 1
-languages-used: "Javascript"
-primary role: "Front-End Developer"
+preview: "/images/projects/forest-browser/intro_preview.jpg"
+projecttype: "Professional"
+teamsize: 3
+toolsused: ["Javascript"]
+role: "Front-End Developer"
+type: "page"
+layout: "projects/forest-browser-extension"
 ---

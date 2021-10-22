@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hui En "Willake" Lin | Game Programmer Portfolio</title>
+    {{ partial "meta" . }}
+    {{ $hamburger := resources.Get "libraries/hamburgers/hamburgers.min.css" }}
+    {{ $cssOpts := (dict "targetPath" "css/projects.css" "enableSourceMap" true ) }}
+    {{ $style := resources.Get "scss/projects/projects.scss" | toCSS $cssOpts }}
+    <link rel="stylesheet" href="{{ $hamburger.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body> 
+{{ partial "nav" . }}
+<section class="banner">
+    <div class="banner__title">Forest Browser Extension</div>
+</section>
+{{ partial "projects/about" . }}
+<section class="content detail__container">
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Interaction System</div>
+        <img class="detail__item__image" src="../../../assets/images/portfolio/escape-the-room-remake/escape_the_room_remake_interaction.jpg" alt="interaction">
+    </div>
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Pickup Item Component</div>
+        <img class="detail__item__image" src="../../../assets/images/portfolio/escape-the-room-remake/escape_the_room_remake_pickup_item_1.jpg" alt="pickup_item_1">
+        <img class="detail__item__image" src="../../../assets/images/portfolio/escape-the-room-remake/escape_the_room_remake_pickup_item_2.jpg" alt="pickup_item_2">
+    </div>
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Puzzles</div>
+        <img class="detail__item__image" src="../../../assets/images/portfolio/escape-the-room-remake/escape_the_room_remake_puzzle_1.jpg" alt="puzzle_1">
+        <img class="detail__item__image" src="../../../assets/images/portfolio/escape-the-room-remake/escape_the_room_remake_puzzle_2.jpg" alt="puzzle_2">
+    </div>
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Runtime Sets</div>
+        <img class="detail__item__image" src="../../../assets/images/portfolio/escape-the-room-remake/escape_the_room_remake_data.jpg" alt="runtimesets">
+    </div>
+</section>
+<section class="links">
+    <a title="Escape the Room Remake download link" class="links__download h4 color__white" href="https://drive.google.com/open?id=1Q9VuZCsBFWiHdgQQeirCnUG6k0ZCJ6ih">Download</a>
+</section>
+{{ partial "footer" .}}
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hui En "Willake" Lin | Game Programmer Portfolio</title>
+    {{ partial "meta" . }}
+    {{ $hamburger := resources.Get "libraries/hamburgers/hamburgers.min.css" }}
+    {{ $cssOpts := (dict "targetPath" "css/projects.css" "enableSourceMap" true ) }}
+    {{ $style := resources.Get "scss/projects/projects.scss" | toCSS $cssOpts }}
+    <link rel="stylesheet" href="{{ $hamburger.Permalink }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}">
+</head>
+<body> 
+{{ partial "nav" . }}
+<section class="banner">
+    <div class="banner__title">{{ .Title }}</div>
+</section>
+{{ partial "projects/about" . }}
+<section class="content detail__container">
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Introduction</div>
+        <div class="detail__item__content">
+            Escape The Room was my first game. This kind of game was very common in Flash games. 
+            The objective of player is find a key to escape from a place. 
+            When I made this game, I only know a little about programming. 
+            It was tough at the beginning. However I found that programming was very fun for me. 
+            Solving problems was like solving puzzle in games. Except programming, 
+            I also designed the puzzles and drew art assets. All of these were good experience as well.
+        </div>
+        <img class="detail__item__image_xs" src="/images/projects/escape-the-room/intro.jpg" alt="screenshot_1">
+    </div>
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Game Mechanic Implementation</div>
+        <div class="detail__item__content">
+            As a novice of programming, creating a game was not easy. 
+            Fortunately the mechanic was not complicated, all of them was successfully implemented with ActionScript 3.0. 
+            The code base was simple, with full of if else statement, containing the mechanic of puzzle and inventory. 
+            The state of the game relied on global variables.
+        </div>
+    </div>
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Puzzle Design</div>
+        <div class="detail__item__content">
+            I love puzzle games, and I played a lot when I was a child. 
+            With that experience, I designed a number of puzzles for testing. 
+            All of them were drew on paper at the beginning and test by my friends. 
+            I picked some of them, which were plausible and interesting, into the real game. 
+            Unfortunately, the manuscript was lost so I could not show it.
+        </div>
+    </div>
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Art Assets</div>
+        <div class="detail__item__content">
+            In this game, a lot of arts would be needed. 
+            I asked a friend to teach me how to draw a scene. 
+            It was not very complicated since all game objects were simple shapes. Scenes were frames in Flash. 
+            I drew scenes in four directions and specific scenes for objects.
+        </div>
+        <img class="detail__item__image_xs" src="/images/projects/escape-the-room/screenshot_1.jpg" alt="screenshot_1">
+        <img class="detail__item__image_xs" src="/images/projects/escape-the-room/screenshot_2.jpg" alt="screenshot_2">
+        <img class="detail__item__image_xs" src="/images/projects/escape-the-room/screenshot_3.jpg" alt="screenshot_3">
+    </div>
+</section>
+<section class="links">
+    <a title="Escape the Room download link" class="links__download h4 color__white" href="https://drive.google.com/open?id=0B56LphuwhSzKQVczaGJnMjgwRjg">Download</a>
+</section>
+{{ partial "footer" .}}
+</body>
+</html>
