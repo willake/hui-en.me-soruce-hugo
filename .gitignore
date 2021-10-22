@@ -1,0 +1,6 @@
+# OS metadata
+.DS_Store
+
+# Ignore built files
+public
+resources
