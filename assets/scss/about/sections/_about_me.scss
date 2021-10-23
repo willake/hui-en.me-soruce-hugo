@@ -34,6 +34,12 @@
     }
 }
 
+.about__me__line {
+    width: 300px;
+    height: 2px;
+    background-color: #70a9a1;
+}
+
 .about__me__content {
     
     @media screen and (min-width: $lg){
@@ -44,7 +50,8 @@
 .about__me__content__item {
     text-align: center;
     margin: 10px 0;
-    line-height: 20px;
+    max-width: 800px;
+    line-height: 25px;
 
     @media screen and (min-width: $lg){
         text-align: center;
