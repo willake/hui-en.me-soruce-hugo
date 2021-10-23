@@ -9,7 +9,7 @@
     "workExperience": [
         {
             "role": "Unity Software Engineer",
-            "period": "SeekrTech, Taichung, Taiwan, September 2018 - June 2021",
+            "period": "SeekrTech, Taichung, Taiwan, Jan. 2019 - June. 2021",
             "highlights": [
                 "Worked on a mobile to-do list app with gamification feature in a cross-functional team",
                 "Implemented all game mechanics in C# with UniRx, designed code architecture and database schema",
@@ -19,7 +19,7 @@
         },
         {
             "role": "Front-End Engineer (Internship)",
-            "period": "SeekrTech, Taichung, Taiwan, July 2017 - September 2017",
+            "period": "SeekrTech, Taichung, Taiwan, Jul. 2017 - Sep. 2017 / Jul. 2018 - Sep. 2018",
             "highlights": [
                 "Developed several websites for company and products with HTML, CSS and JavaScript",
                 "Refactored browser extension and developed new features, connecting server APIs",
@@ -31,7 +31,7 @@
     "projectExperience": [
         {
             "role": "Gameplay Programmer",
-            "period": "Hourglass : Project Norn, Student Project, July 2017 - July 2018",
+            "period": "Hourglass : Project Norn, Student Project, Oct. 2017 - May. 2018",
             "highlights": [
                 "Discussed with game designer to solve problem between designing and programming, improved level design and remove bugs",
                 "Collaborated with game artist to promote efficiency and make graphic more lively",
@@ -40,7 +40,7 @@
         },
         {
             "role": "Game Developer (Contract)",
-            "period": "Pinka, National Taiwan Normal University, Taipei, Taiwan, July 2016 - July 2017",
+            "period": "Pinka, National Taiwan Normal University, Taipei, Taiwan, Jan. 2017 - May. 2018",
             "highlights": [
                 "Designing game mechanics as a educational game",
                 "Implemented several significant gameplay feature such as user input, UI, combat system and map generating in C# with Unity",
@@ -51,11 +51,11 @@
     "education": [
         {
             "degree": "B.A. in Information Comunication",
-            "period": "Yuan Ze University, Taiwan, September 2015 - July 2018"
+            "period": "Yuan Ze University, Taiwan, Sep. 2015 - Jul. 2018"
         },
         {
             "degree": "B.A in Information Management",
-            "period": "Yuan Ze University, Taiwan, September 2013 - July 2015"
+            "period": "Yuan Ze University, Taiwan, Sep. 2013 - Jul. 2015"
         }
     ]
 }
