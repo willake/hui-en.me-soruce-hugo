@@ -11,18 +11,18 @@
 </head>
 <body> 
 {{ partial "nav" . }}
-<section id="about__me" class="about__me">
-    <div class="about__me__avatar">
+<section id="about__me" class="about__me container">
+    <div class="about__me__avatar container__item">
         <div class="about__me__avatar__item"></div>
     </div>
-    <div class="about__me__content">
+    <div class="about__me__content container__item">
         {{ range .Site.Data.about.description }}
         <div class="about__me__content__item content color__grey">{{.}}</div>
         {{ end }}
     </div>
-    </section>
-    <section class="skill">
-    <div class="skill__category">
+</section>
+<section class="skill container">
+    <div class="skill__category container__item">
         <h2 class="skill__category__title">Programming Skills</h2>
         <div class="skill__category__content">
             {{ range .Site.Data.about.programming }}
@@ -32,7 +32,7 @@
             {{ end }}
         </div>
     </div>
-    <div class="skill__category">
+    <div class="skill__category container__item">
         <h2 class="skill__category__title">Software / Framework</h2>
         <div class="skill__category__content">
             {{ range .Site.Data.about.software }}
@@ -42,7 +42,7 @@
             {{ end }}
         </div>
     </div>
-    <div class="skill__category">
+    <div class="skill__category container__item">
         <h2 class="skill__category__title">Collaboration / Knowledge</h2>
         <div class="skill__category__content">
             {{ range .Site.Data.about.collaboration }}
@@ -53,8 +53,8 @@
         </div>
     </div>
     </section>
-    <section id="experience" class="experience">
-    <div class="experience__category work__experience">
+    <section id="experience" class="experience container">
+    <div class="experience__category work__experience container__item">
         <h2 class="experience__category__title h1">Work Experience</h2>
         <div class="experience__category__content">
             {{ range .Site.Data.about.workExperience }}
@@ -70,7 +70,7 @@
             {{ end }}
         </div>
     </div>
-    <div class="experience__category project__experience">
+    <div class="experience__category project__experience container__item">
         <h2 class="experience__category__title h1">Project Experience</h2>
         <div class="experience__category__content">
             {{ range .Site.Data.about.projectExperience }}
@@ -86,7 +86,7 @@
             {{ end }}
         </div>
     </div>
-    <div class="experience__category education">
+    <div class="experience__category education container__item">
         <h2 class="experience__category__title h1">Education</h2>
         <div class="experience__category__content">
             {{ range .Site.Data.about.education }}
