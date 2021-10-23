@@ -8,33 +8,23 @@
     "collaboration": ["Scrum", "Git Flow", "Design Pattern", "Object Oriented Programming", "Data Oriented Programming", "Desktop", "Android/iOS"],
     "workExperience": [
         {
-            "role": "Software Engineer",
+            "role": "Unity Software Engineer",
             "period": "SeekrTech, Taichung, Taiwan, September 2018 - June 2021",
             "highlights": [
-                "Working on unannounced mobile app project using Unity",
-                "Developed internal system for Forest with Vue.js and Ruby on rails",
-                "Collaborated with UI/UX designer to define application features",
-                "Collaborated with design team to identify users need, and produced the company offical website with HTML, CSS and Javascript"
+                "Worked on a mobile to-do list app with gamification feature in a cross-functional team",
+                "Implemented all game mechanics in C# with UniRx, designed code architecture and database schema",
+                "Defined art assets standard, developing level design and UI building tools, improving productivity",
+                "Executed project in scrum framework, scheduling work accurately"
             ]
         },
         {
-            "role": "Front-End Developer",
+            "role": "Front-End Engineer (Internship)",
             "period": "SeekrTech, Taichung, Taiwan, July 2017 - September 2017",
             "highlights": [
-                "Developed browser extension with HTML, CSS, Javascript",
-                "Collaborated with UI/UX designer to define application features",
-                "Collaborated with design team to identify users need, and produced the company offical website with HTML, CSS and Javascript",
+                "Developed several websites for company and products with HTML, CSS and JavaScript",
+                "Refactored browser extension and developed new features, connecting server APIs",
+                "Defining static website skeleton for future product webpages",
                 "Work with seinor programmer to make browser extension comunicate with server"
-            ]
-        },
-        {
-            "role": "Game Developer",
-            "period": "National Taiwan Normal University, Taipei, Taiwan, July 2016 - July 2017",
-            "highlights": [
-                "Collaborated with colleague to discuss and design whole game",
-                "Draw up design system detail, divided work efficiency",
-                "Developed the whole game system to make it playable",
-                "Implemented several significant gameplay feature with Unity3D"
             ]
         }
     ],
@@ -46,6 +36,15 @@
                 "Discussed with game designer to solve problem between designing and programming, improved level design and remove bugs",
                 "Collaborated with game artist to promote efficiency and make graphic more lively",
                 "Implemented several significant gameplay features with Unity3D"
+            ]
+        },
+        {
+            "role": "Game Developer (Contract)",
+            "period": "Pinka, National Taiwan Normal University, Taipei, Taiwan, July 2016 - July 2017",
+            "highlights": [
+                "Designing game mechanics as a educational game",
+                "Implemented several significant gameplay feature such as user input, UI, combat system and map generating in C# with Unity",
+                "Won 1st place in competition, which contained over 20 other projects from 3 different university eligible for rewards"
             ]
         }
     ],
