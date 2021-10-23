@@ -5,5 +5,6 @@ draft: false
 type: "page"
 menu: "about"
 layout: "about"
+avatar: "/images/about/me-4.jpg"
 ---
 

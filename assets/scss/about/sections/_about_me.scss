@@ -24,7 +24,6 @@
     height: 128px;
     border: 3px solid #70a9a1;
     border-radius: 50%;
-    background-image: url(../../../assets/images/me-4.jpg);
     background-position: center;
     background-size: cover;
     margin: 10px 0;
@@ -36,7 +35,10 @@
 }
 
 .about__me__content {
-    
+    max-width: 800px;
+    border-width: 0px 4px;
+    border-style: solid;
+    border-color: #70a9a1;
     @media screen and (min-width: $lg){
         flex: 1 1 1;
     }
@@ -45,7 +47,7 @@
 .about__me__content__item {
     text-align: center;
     margin: 10px 0;
-    line-height: 20px;
+    line-height: 25px;
 
     @media screen and (min-width: $lg){
         text-align: center;
