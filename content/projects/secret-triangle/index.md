@@ -9,4 +9,5 @@ toolsused: ["Unity", "C#"]
 role: "Gameplay Programmer"
 type: "page"
 layout: "projects/secret-triangle"
+order: 6
 ---

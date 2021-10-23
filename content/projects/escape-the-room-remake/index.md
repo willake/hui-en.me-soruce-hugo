@@ -5,8 +5,9 @@ draft: true
 preview: "/images/projects/escape-the-room-remake/intro_preview.jpg"
 projecttype: "Side"
 teamsize: 2
-toolsused: ["Unreal", "Blueprint", "C++"]
+toolsused: ["Unreal", "Blueprint"]
 role: "GamePlay Programmer"
 type: "page"
 layout: "projects/escape-the-room-remake"
+order: 2
 ---
