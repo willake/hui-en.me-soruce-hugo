@@ -44,7 +44,7 @@
     </div>
     <h2 class="portfolio__title h1">Side Projects</h2>
     <div class="portfolio__row">
-        {{ range where (where .Site.Pages "Section" "projects") "Params.projecttype" "Side" }}
+        {{ range where (where (.Site.Pages.ByParam "order") "Section" "projects") "Params.projecttype" "Side" }}
             <a title="{{ .Title }}" class="portfolio__item" href="{{ .Permalink }}">
                 <div class="portfolio__item__body" style="background-image: url({{ .Params.preview }});">
                     <div class="portfolio__item__overlay"></div>
