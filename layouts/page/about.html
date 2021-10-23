@@ -13,7 +13,7 @@
 {{ partial "nav" . }}
 <section id="about__me" class="about__me container">
     <div class="about__me__avatar container__item">
-        <div class="about__me__avatar__item"></div>
+        <div class="about__me__avatar__item" style="background-image: url({{ .Params.avatar }});"></div>
     </div>
     <div class="about__me__content container__item">
         {{ range .Site.Data.about.description }}
