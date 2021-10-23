@@ -34,14 +34,11 @@
     }
 }
 
-.about__me__line {
-    width: 300px;
-    height: 2px;
-    background-color: #70a9a1;
-}
-
 .about__me__content {
-    
+    max-width: 800px;
+    border-width: 0px 4px;
+    border-style: solid;
+    border-color: #70a9a1;
     @media screen and (min-width: $lg){
         flex: 1 1 1;
     }
@@ -50,7 +47,6 @@
 .about__me__content__item {
     text-align: center;
     margin: 10px 0;
-    max-width: 800px;
     line-height: 25px;
 
     @media screen and (min-width: $lg){
