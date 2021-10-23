@@ -1,0 +1,4 @@
+User-agent: *
+Allow: *
+Sitemap: https://hui-en.me/sitemap.xml
+Host: https://hui-en.me/

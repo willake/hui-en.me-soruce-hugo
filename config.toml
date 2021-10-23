@@ -1,3 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://hui-en.me/"
 languageCode = "en-us"
-title = "Hui En Lin | Game Developer Portfolio"
+title = "Hui En &quot;Willake&quot; Lin | Game Programmer Portfolio"
+enableRobotsTXT = true
