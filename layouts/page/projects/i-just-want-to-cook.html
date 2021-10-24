@@ -13,12 +13,9 @@
     <div class="detail__item">
         <div class="detail__item__title color__green">Introduction</div>
         <div class="detail__item__content">
-            I Just Want to Cook is the game I made In my first Unity class in university. 
-            Restricting by teacher, this game was designed to be a local multiple player game. 
-            The game mechanic was designed by myself, inspiring from the conventional game, hide-and-seek. 
-            There are two characters, the hunter and the rabbit. 
-            The objective of hunter is to catch the rabbit, and the goal of rabbit is to find ingredients for cooking.
+            {{ .Params.description }}
         </div>
+        <img class="detail__item__image_sm" src="/images/projects/i-just-want-to-cook/gifs/place-cheese.gif" alt="place-cheese">
     </div>
     <div class="detail__item">
         <div class="detail__item__title color__green">Local Multiple Players</div>
@@ -28,7 +25,7 @@
             In order to make this game playable, maps were designed like mazes. 
             By that, players could not precisely locate their opponents position even they could see them.
         </div>
-        <img class="detail__item__image_sm" src="/images/projects/i-just-want-to-cook/level_1.jpg" alt="refactoring_settings">
+        <img class="detail__item__image_sm" src="/images/projects/i-just-want-to-cook/gifs/chasing.gif" alt="chasing">
         <div class="detail__item__content">
             As for the implementation, two cameras will be needed. 
             I created these cameras and bound them to each player and render on screen at two sides respectively.
@@ -42,6 +39,7 @@
             However, it is clear that players is unable to control their camera by themselves, cameras should rotate automatically. 
             In order to achieve this goal, I implement Zelda like third person camera which will rotate by themselves, depending on the direction player toward.
         </div>
+        <img class="detail__item__image_sm" src="/images/projects/i-just-want-to-cook/gifs/third-person-camera.gif" alt="third-person-camera">
     </div>
     <div class="detail__item">
         <div class="detail__item__title color__green">World Space UI</div>
@@ -49,6 +47,8 @@
             I also did experiments in this game. For the user interface of main menu, I placed all interfaces in world space. 
             Making UI switching be like traveling in the game world. It makes the menu more vigorous.
         </div>
+        <img class="detail__item__image_sm" src="/images/projects/i-just-want-to-cook/gifs/how-to-play-menu.gif" alt="how-to-play-menu">
+        <img class="detail__item__image_sm" src="/images/projects/i-just-want-to-cook/gifs/play-menu.gif" alt="play-menu">
     </div>
 </section>
 <section class="links">
