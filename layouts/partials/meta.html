@@ -15,9 +15,11 @@
   gtag('config', 'UA-111797252-1');
 </script>
 
+<title>{{ .Params.ogTitle }}</title>
+
 <!--Description-->
 
-<meta name="description" content="Hui En Lin, a communicable, dedicated programmer with experience in collaborating with people from different roles, able to think in more than one perspective, making collaboration increasingly efficient. As a programmer with professional experience in developing products with Unity for almost 3 years, I have the ability of implementing gameplay features. improving graphic, designing code architecture and optimizing games effectively.">
+<meta name="description" content="{{ .Params.ogDescription }}">
 
 
 <!--Author-->
@@ -27,7 +29,7 @@
 
 <!--Open Graph Title-->
 
-<meta property="og:title" content='Hui En &quot;Willake&quot; Lin | Game Programmer Portfolio' />
+<meta property="og:title" content="{{ .Params.ogTitle }}" />
 
 <!--Open Graph Image-->
 <meta property="og:image" content="{{$cover.Permalink}}">
@@ -35,11 +37,11 @@
 
 <!--Open Graph Description-->
 
-<meta property="og:description" content="Hui En Lin, a communicable, dedicated programmer with experience in collaborating with people from different roles, able to think in more than one perspective, making collaboration increasingly efficient. As a programmer with professional experience in developing products with Unity for almost 3 years, I have the ability of implementing gameplay features. improving graphic, designing code architecture and optimizing games effectively." />
+<meta property="og:description" content="{{ .Params.ogDescription }}" />
 
 
 <!--Open Graph Site Name-->
-<meta property="og:site_name" content="Hui En &quot;Willake&quot; Lin | Game Programmer Portfolio" />
+<meta property="og:site_name" content="{{ .Params.ogTitle }}" />
 
 <!--Type page-->
 
@@ -55,9 +57,9 @@
 <meta name="twitter:image"
         content="{{$cover.Permalink}}">
 <meta name="twitter:title"
-        content="Hui En &quot;Willake&quot; Lin | Game Programmer Portfolio">
+        content="{{ .Params.ogTitle }}">
 <meta name="twitter:description"
-        content="Hui En Lin, a communicable, dedicated programmer with experience in collaborating with people from different roles, able to think in more than one perspective, making collaboration increasingly efficient. As a programmer with professional experience in developing products with Unity for almost 3 years, I have the ability of implementing gameplay features. improving graphic, designing code architecture and optimizing games effectively.">
+        content="{{ .Params.ogDescription }}">
 <meta name="twitter:site"
         content="https://www.hui-en.me/">
 
