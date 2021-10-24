@@ -1,5 +1,7 @@
 ---
 title: "Forest Browser Extension"
+ogTitle: "Forest Browser Extension | Hui En &quot;Willake&quot; Lin"
+ogDescription: ""
 date: 2021-10-06T20:36:58+08:00
 draft: true
 preview: "/images/projects/forest-browser/intro_preview.jpg"
