@@ -36,9 +36,6 @@
 
 .about__me__content {
     max-width: 800px;
-    border-width: 0px 4px;
-    border-style: solid;
-    border-color: #70a9a1;
     @media screen and (min-width: $lg){
         flex: 1 1 1;
     }
