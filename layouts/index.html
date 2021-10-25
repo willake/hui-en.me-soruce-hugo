@@ -2,14 +2,6 @@
 {{ $mp4 := resources.Get "videos/portfolio.mp4" }}
 {{ $webm := resources.Get "videos/portfolio.webm" }}
 <section class="intro">
-    <div class="intro__content__mobile">
-        <h1 class="intro__title__mobile color__green">- Hui En Lin -</h1>
-        <h2 class="intro__subtitle__mobile color__green">Gameplay Programmer</h2>
-        <video id="intro__video__mobile" class="intro__video__mobile" loop="loop" muted="muted" preload="preload" controls>
-            <source src="{{ $mp4.Permalink }}#t=0.1" type="video/mp4">
-            <source src="{{ $webm.Permalink }}#t=0.1" type="video/webm">
-        </video>
-    </div>
     <div class="intro__content">
         <video id="intro__video" class="intro__video" loop="loop" muted="muted" preload="preload">
                 <source src="{{ $mp4.Permalink }}" type="video/mp4">
