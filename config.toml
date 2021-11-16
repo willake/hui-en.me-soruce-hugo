@@ -2,3 +2,5 @@ baseURL = "https://hui-en.me/"
 languageCode = "en-us"
 title = "Hui En &quot;Willake&quot; Lin | Game Programmer Portfolio"
 enableRobotsTXT = true
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
