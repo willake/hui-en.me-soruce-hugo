@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{ partial "projects/head" . }}
+</head>
+<body> 
+{{ partial "nav" . }}
+<section class="banner">
+    <div class="banner__title">{{ .Title }}</div>
+</section>
+{{ partial "projects/about" . }}
+<section class="content detail__container">
+    <div class="detail__item">
+        <div class="detail__item__title color__green">Introduction</div>
+        <div class="detail__item__content">
+            WaterDo is a todo list app with gamification feature, making daily tasks fun. 
+            In this app, users schedule their personal tasks as bubbles, popping them when they completed and gaining energy. 
+            With energy gain from bubbles, users could explore stories in WaterDo. 
+            I participated the project from scratch as a Unity programmer, worked in a cross-functional team with professional people.
+        </div>
+        <div class="detail__item__video">
+            <iframe src="https://www.youtube.com/embed/xmeTMo7Ej8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+<section class="links">
+    <a title="App Store" class="links__download h4 color__white" href="https://apps.apple.com/app/apple-store/id1388228852?mt=8">App Store</a>
+    <a title="Google Play Store" class="links__download h4 color__white" href="https://play.google.com/store/apps/details?id=com.seekrtech.waterapp&referrer=utm_source%3Dofficial_website">Google Play Store</a>
+</section>
+{{ partial "footer" .}}
+</body>
+</html>

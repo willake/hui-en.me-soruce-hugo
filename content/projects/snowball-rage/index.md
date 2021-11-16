@@ -1,6 +1,6 @@
 ---
 title: "Snowball Rage"
-ogTitle: "Snowball Rage | Hui En &quot;Willake&quot; Lin"
+ogTitle: "Snowball Rage | Hui En \"Willake\" Lin"
 ogDescription: "Snowball Rage was a game jam project. 
             A artist friend and me participated in 2018 Unreal Game Jam, which participants need to make a game in one week. 
             My main duty is implementing significant gameplay mechanic with blueprints. 

@@ -1,6 +1,6 @@
 ---
 title: "Escape the Room"
-ogTitle: "Escape the Room | Hui En &quot;Willake&quot; Lin"
+ogTitle: "Escape the Room | Hui En \"Willake\" Lin"
 ogDescription: ""
 date: 2021-10-07T00:12:17+08:00
 draft: true
@@ -11,5 +11,5 @@ toolsused: ["Flash", "ActionScript 3.0"]
 role: "Game Developer"
 type: "page"
 layout: "projects/escape-the-room"
-order: 7
+order: 4
 ---

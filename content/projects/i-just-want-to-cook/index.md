@@ -1,6 +1,6 @@
 ---
 title: "I Just Want to Cook"
-ogTitle: "I Just Want to Cook | Hui En &quot;Willake&quot; Lin"
+ogTitle: "I Just Want to Cook | Hui En \"Willake\" Lin"
 ogDescription: "I Just Want to Cook is the game I made In my first Unity class in university. 
             Restricting by teacher, this game was designed to be a local multiple player game. 
             The game mechanic was designed by myself, inspiring from the conventional game, hide-and-seek. 

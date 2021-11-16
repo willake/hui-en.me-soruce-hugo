@@ -1,6 +1,6 @@
 ---
 title: "Secret Triangle"
-ogTitle: "Secret Triangle | Hui En &quot;Willake&quot; Lin"
+ogTitle: "Secret Triangle | Hui En \"Willake\" Lin"
 ogDescription: "Secret Triangle was my second game made in Unity. 
             In contrast to I Just Want To Cook, which players interact with games by keyboards only, the main input of this game was by mouse. 
             In this experience, I learned a different aspect of using ray cast. 

@@ -1,6 +1,6 @@
 ---
 title: "Forest Browser Extension"
-ogTitle: "Forest Browser Extension | Hui En &quot;Willake&quot; Lin"
+ogTitle: "Forest Browser Extension | Hui En \"Willake\" Lin"
 ogDescription: ""
 date: 2021-10-06T20:36:58+08:00
 draft: true
